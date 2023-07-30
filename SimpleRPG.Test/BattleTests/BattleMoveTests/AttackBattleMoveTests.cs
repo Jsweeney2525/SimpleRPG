@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
 using NUnit.Framework;
-using SimpleRPG.Battle.BattleManager;
 using SimpleRPG.Battle.BattleMoves;
 using SimpleRPG.Battle.Fighters;
-using SimpleRPG.Battle.Statuses;
 using SimpleRPG.Enums;
 using SimpleRPG.Events;
 using SimpleRPG.Test.MockClasses;

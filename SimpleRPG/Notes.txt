@@ -52,7 +52,7 @@ public event EventHandler<CustomArgs> eventName <-- no longer need to define the
 
 
 
-##########################Scratch pad##############################################
+########################## Scratch pad ##############################################
 
 DecisionManager needs to be able to unset the selected subRegion, and this method would be called when the Region was beaten.
 At the same time, the MapGroupingItems should be unlocked for that same subRegion

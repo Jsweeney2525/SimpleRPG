@@ -158,7 +158,7 @@ namespace SimpleRPG
                     {
                         new ColorString("Right now, you're playing a very simple version of SimpleRPG."),
                         new ColorString("Your team is 2 players, with no means of customizing their stats or abilities."),
-                        new ColorString("the basic run down of stats (none of which are original on any level):\n"),
+                        new ColorString("the basic run down of stats:\n"),
                         new ColorString(new ColorString("Strength", ConsoleColor.Cyan), ": raises damage done"),
                         new ColorString(new ColorString("Defense", ConsoleColor.Cyan), ": lowers damage taken"),
                         new ColorString(new ColorString("Speed", ConsoleColor.Cyan), ": each round, the faster fighters move first-"),
