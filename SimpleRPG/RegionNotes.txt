@@ -1,0 +1,13 @@
+﻿Need to be able to go from one Region to the next (Fields to Casino, Fields to Crystal Caverns, Fields to Desert)
+Need to be able to go from one SubRegion to the next (Desert Intro to Wastelands, oasis, town- as an example)
+    need to be able to group SubRegions (Wastelands, Oasis, Town in previous example)
+
+Need to be able to "unlock" secret SubRegions/Regions (can't access Dark Cave until Casino, Crystal Caverns, and Desert have been defeated)
+
+Need to be able to pick which region to go to next.
+Need to be smart enough to send them to a region if there is no choice
+
+If I did "to from", could create a static list of paths. Any path with a null "from" would be a start node, any path with a null "to" would be an end node
+
+Decision manager can store which region they're going to inside for when they answer 2 questionarres that will later open or bar a particular path.
+

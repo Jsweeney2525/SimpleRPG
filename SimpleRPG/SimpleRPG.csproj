@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2EE2383A-7FCF-423B-BD8E-0B33E29898BF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SimpleRPG</RootNamespace>
+    <AssemblyName>SimpleRPG</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Battle\BattlefieldFactory.cs" />
+    <Compile Include="Battle\BattleManager\BattleManagerScreenOutputs.cs" />
+    <Compile Include="Battle\BattleManager\BattleManagerCalculatorFunctions.cs" />
+    <Compile Include="Battle\BattleManager\DanceEffectCounter.cs" />
+    <Compile Include="Battle\BattleManager\FieldEffectCounter.cs" />
+    <Compile Include="Battle\BattleManager\TurnCounter.cs" />
+    <Compile Include="Battle\BattleManager\BattleManager.cs" />
+    <Compile Include="Battle\BattleMoves\ConditionalPowerAttackBattleMove.cs" />
+    <Compile Include="Battle\BattleMoves\AttackBattleMove.cs" />
+    <Compile Include="Battle\BattleMoves\BattleMoveEffects\NeverMissBattleMoveEffect.cs" />
+    <Compile Include="Battle\BattleMoves\BattleMoveEffects\AttackBoostBattleMoveEffect.cs" />
+    <Compile Include="Battle\BattleMoves\BattleMoveEffects\CannotBeEvadedBattleMoveEffect.cs" />
+    <Compile Include="Battle\BattleMoves\BattleMoveEffects\RestorationBattleMoveEffect.cs" />
+    <Compile Include="Battle\BattleMoves\BattleMoveEffects\BattleMoveEffect.cs" />
+    <Compile Include="Battle\BattleMoves\BattleMoveWithTargetAndNumberInput.cs" />
+    <Compile Include="Battle\BattleMoves\BellMove.cs" />
+    <Compile Include="Battle\BattleMoves\ConditionalBattleMoves\NotEvadedBattleCondition.cs" />
+    <Compile Include="Battle\BattleMoves\ConditionalBattleMoves\BattleCondition.cs" />
+    <Compile Include="Battle\BattleMoves\ConditionalBattleMoves\DanceBattleCondition.cs" />
+    <Compile Include="Battle\BattleMoves\IBattleMoveQueue.cs" />
+    <Compile Include="Battle\BattleMoves\BattleMoveQueue.cs" />
+    <Compile Include="Battle\BattleMoves\DoNothingMove.cs" />
+    <Compile Include="Battle\BattleMoves\DanceMove.cs" />
+    <Compile Include="Battle\BattleMoves\ShieldFortifyingMove.cs" />
+    <Compile Include="Battle\BattleMoves\ShieldBusterMove.cs" />
+    <Compile Include="Battle\BattleMoves\ShadeAbsorbingMove.cs" />
+    <Compile Include="Battle\BattleMoves\StatusMove.cs" />
+    <Compile Include="Battle\BattleShields\IronBattleShield.cs" />
+    <Compile Include="Battle\FieldEffects\CriticalChanceMultiplierFieldEffect.cs" />
+    <Compile Include="Battle\FieldEffects\StatusFieldEffect.cs" />
+    <Compile Include="Battle\FieldEffects\IHasOwnerFieldEffect.cs" />
+    <Compile Include="Battle\FieldEffects\FieldEffectCombiner.cs" />
+    <Compile Include="Battle\FieldEffects\MagicMultiplierFieldEffect.cs" />
+    <Compile Include="Battle\FieldEffects\MagicResistanceMultiplierFieldEffect.cs" />
+    <Compile Include="Battle\FieldEffects\ShieldFieldEffect.cs" />
+    <Compile Include="Battle\FieldEffects\ReflectFieldEffect.cs" />
+    <Compile Include="Battle\FieldEffects\MagicAttackFieldEffect.cs" />
+    <Compile Include="Battle\Fighters\Enemies\IBossEnemy.cs" />
+    <Compile Include="Battle\Fighters\Enemies\HumanControlledEnemyFighter.cs" />
+    <Compile Include="Battle\Fighters\Enemies\Barbarian.cs" />
+    <Compile Include="Battle\Fighters\Enemies\IMagicEnemy.cs" />
+    <Compile Include="Battle\Fighters\Enemies\Shade.cs" />
+    <Compile Include="Battle\Fighters\Enemies\ShieldGuy.cs" />
+    <Compile Include="Battle\Fighters\Enemies\Warrior.cs" />
+    <Compile Include="Battle\Fighters\FighterGroupings\GroupingFactory.cs" />
+    <Compile Include="Battle\Fighters\FighterGroupings\ShadeFighterGrouping.cs" />
+    <Compile Include="Battle\Fighters\FighterGroupings\FighterGrouping.cs" />
+    <Compile Include="Battle\Fighters\Team.cs" />
+    <Compile Include="Battle\BattleShields\BattleShield.cs" />
+    <Compile Include="Battle\IDamageable.cs" />
+    <Compile Include="Battle\IMoveExecutor.cs" />
+    <Compile Include="Battle\IStatusable.cs" />
+    <Compile Include="Battle\Statuses\CounterAttackStatus.cs" />
+    <Compile Include="Battle\Statuses\CriticalChanceMultiplierStatus.cs" />
+    <Compile Include="Battle\Statuses\AutoEvadeStatus.cs" />
+    <Compile Include="Battle\Statuses\RestorePercentageStatus.cs" />
+    <Compile Include="Battle\Statuses\MagicResistanceMultiplierStatus.cs" />
+    <Compile Include="Battle\Statuses\MultiplierStatus.cs" />
+    <Compile Include="Battle\Statuses\StatMultiplierStatus.cs" />
+    <Compile Include="Battle\Statuses\MagicMultiplierStatus.cs" />
+    <Compile Include="Battle\FieldEffects\RestoreManaPercentageFieldEffect.cs" />
+    <Compile Include="Battle\FieldEffects\UndoDebuffsFieldEffect.cs" />
+    <Compile Include="Battle\FieldEffects\SpellCostMultiplierFieldEffect.cs" />
+    <Compile Include="Battle\FieldEffects\StatMultiplierFieldEffect.cs" />
+    <Compile Include="Battle\FieldEffects\RestoreHealthPercentageFieldEffect.cs" />
+    <Compile Include="Battle\BattleMoves\IFieldEffectMove.cs" />
+    <Compile Include="Battle\FieldEffects\FieldEffect.cs" />
+    <Compile Include="Battle\BattleMoves\FieldEffectMove.cs" />
+    <Compile Include="Battle\BattleMoves\MultiTurnBattleMove.cs" />
+    <Compile Include="Battle\BattleMoves\SpecialMove.cs" />
+    <Compile Include="Battle\BattleMoves\BattleMoveWithTarget.cs" />
+    <Compile Include="Battle\Fighters\Enemies\Egg.cs" />
+    <Compile Include="Battle\Fighters\Enemies\DancerBoss.cs" />
+    <Compile Include="Battle\Fighters\Enemies\Zombie.cs" />
+    <Compile Include="Battle\Fighters\Enemies\MegaChicken.cs" />
+    <Compile Include="Battle\Fighters\Enemies\Fairy.cs" />
+    <Compile Include="Battle\Fighters\Enemies\Golem.cs" />
+    <Compile Include="Battle\Fighters\Enemies\Ogre.cs" />
+    <Compile Include="Battle\Fighters\Enemies\Goblin.cs" />
+    <Compile Include="Battle\BattleShields\ElementalBattleShield.cs" />
+    <Compile Include="Battle\BattleShields\IBattleShield.cs" />
+    <Compile Include="Battle\LevelUpManager.cs" />
+    <Compile Include="Battle\Magic\MagicRelationshipCalculator.cs" />
+    <Compile Include="Battle\Magic\MagicSet.cs" />
+    <Compile Include="Battle\Statuses\MagicSealedStatus.cs" />
+    <Compile Include="Battle\Statuses\ReflectStatus.cs" />
+    <Compile Include="Battle\Statuses\SpellCostMultiplierStatus.cs" />
+    <Compile Include="Battle\BattleMoves\ShieldMove.cs" />
+    <Compile Include="Battle\Statuses\BlindStatus.cs" />
+    <Compile Include="Battle\Statuses\UndoDebuffsStatus.cs" />
+    <Compile Include="Battle\Statuses\Status.cs" />
+    <Compile Include="Battle\Statuses\StatusManager.cs" />
+    <Compile Include="Battle\TeamConfiguration.cs" />
+    <Compile Include="Battle\ITeamFactory.cs" />
+    <Compile Include="Battle\TeamFactory.cs" />
+    <Compile Include="Battle\Fighters\HumanFighter.cs" />
+    <Compile Include="Battle\Fighters\Enemies\EnemyFighter.cs" />
+    <Compile Include="Battle\Magic\Spell.cs" />
+    <Compile Include="Battle\Magic\SpellFactory.cs" />
+    <Compile Include="Battle\BattleMoves\MoveFactory.cs" />
+    <Compile Include="Battle\BattleMoves\BattleMove.cs" />
+    <Compile Include="Battle\TerrainInteractables\Bell.cs" />
+    <Compile Include="Battle\TerrainInteractables\TerrainInteractable.cs" />
+    <Compile Include="Enums\BattleConfigurationSpecialFlags.cs" />
+    <Compile Include="Enums\BellMoveTypes.cs" />
+    <Compile Include="Enums\PersonalityFlags.cs" />
+    <Compile Include="Enums\Gods.cs" />
+    <Compile Include="Enums\BattleMoveEffectActivationTypes.cs" />
+    <Compile Include="Enums\MagicStatTypes.cs" />
+    <Compile Include="Enums\SpecialMoveFailedReasonTypes.cs" />
+    <Compile Include="Enums\BellTypes.cs" />
+    <Compile Include="Enums\WorldSubRegions.cs" />
+    <Compile Include="Enums\WorldRegions.cs" />
+    <Compile Include="Enums\MagicRelationshipTypes.cs" />
+    <Compile Include="Enums\DanceEffectTypes.cs" />
+    <Compile Include="Enums\FighterClasses.cs" />
+    <Compile Include="Enums\RestorationTypes.cs" />
+    <Compile Include="Enums\ShieldFortifyingTypes.cs" />
+    <Compile Include="Enums\StatTypes.cs" />
+    <Compile Include="Enums\RestoreHealthEffectTypes.cs" />
+    <Compile Include="Enums\FighterMagicRelationshipTypes.cs" />
+    <Compile Include="Enums\SpellTypes.cs" />
+    <Compile Include="Enums\TargetTypes.cs" />
+    <Compile Include="Enums\MagicTypes.cs" />
+    <Compile Include="Enums\BattleEndStatuses.cs" />
+    <Compile Include="Enums\BattleMoveTypes.cs" />
+    <Compile Include="Enums\FighterTypes.cs" />
+    <Compile Include="Enums\MenuTypes.cs" />
+    <Compile Include="Battle\Fighters\Fighter.cs" />
+    <Compile Include="Battle\Fighters\IFighter.cs" />
+    <Compile Include="Battle\Fighters\FighterFactory.cs" />
+    <Compile Include="Battle\Fighters\ITeam.cs" />
+    <Compile Include="Events\FighterTransformedEventArgs.cs" />
+    <Compile Include="Events\FighterHealedEventArgs.cs" />
+    <Compile Include="Events\ShadeAbsorbedEventArgs.cs" />
+    <Compile Include="Events\StatRaisedEventArgs.cs" />
+    <Compile Include="Events\FighterSealedEventArgs.cs" />
+    <Compile Include="Events\FighterAddedEventArgs.cs" />
+    <Compile Include="Events\SubRegionCompletedEventArgs.cs" />
+    <Compile Include="Events\RegionCompletedEventArgs.cs" />
+    <Compile Include="Events\MagicBonusAppliedEventArg.cs" />
+    <Compile Include="Events\StatBonusAppliedEventArg.cs" />
+    <Compile Include="Events\ShieldAddedEventArgs.cs" />
+    <Compile Include="Events\ShieldFortifiedEventArgs.cs" />
+    <Compile Include="Events\ShieldHealedEventArgs.cs" />
+    <Compile Include="Events\SpecialMoveFailedEventArgs.cs" />
+    <Compile Include="Events\SpecialMoveExecutedEventArgs.cs" />
+    <Compile Include="Events\EnemyAttackCounteredEventArgs.cs" />
+    <Compile Include="Events\AutoEvadedEventArgs.cs" />
+    <Compile Include="Events\BattleEndedEventArgs.cs" />
+    <Compile Include="Events\FieldEffectExecutedEventArgs.cs" />
+    <Compile Include="Events\ShieldDestroyedEventArgs.cs" />
+    <Compile Include="Events\MagicalDamageTakenEventArgs.cs" />
+    <Compile Include="Events\MoveLearnedEventArgs.cs" />
+    <Compile Include="Events\SpellsLearnedEventArgs.cs" />
+    <Compile Include="Events\LeveledUpEventArgs.cs" />
+    <Compile Include="Events\ExpGainedEventArgs.cs" />
+    <Compile Include="Events\ManaRestoredEventArgs.cs" />
+    <Compile Include="Events\ManaLostEventArgs.cs" />
+    <Compile Include="Events\AttackMissedEventArgs.cs" />
+    <Compile Include="Events\CriticalAttackEventArgs.cs" />
+    <Compile Include="Events\RanEventArgs.cs" />
+    <Compile Include="Events\StatusRemovedEventArgs.cs" />
+    <Compile Include="Events\StatusAddedEventArgs.cs" />
+    <Compile Include="Events\RoundEndedEventArgs.cs" />
+    <Compile Include="Events\TurnEndedEventArgs.cs" />
+    <Compile Include="Events\SpellSuccessfulEventArgs.cs" />
+    <Compile Include="Events\TeamDefeatedEventArgs.cs" />
+    <Compile Include="Events\EnemyKilledEventArgs.cs" />
+    <Compile Include="Events\KilledEventArgs.cs" />
+    <Compile Include="Events\AttackSuccessfulEventArgs.cs" />
+    <Compile Include="Events\PhysicalDamageTakenEventArgs.cs" />
+    <Compile Include="Helpers\IDecisionManager.cs" />
+    <Compile Include="Helpers\GodRelationshipManager.cs" />
+    <Compile Include="Helpers\DecisionManager.cs" />
+    <Compile Include="Helpers\IChanceService.cs" />
+    <Compile Include="Helpers\ChanceService.cs" />
+    <Compile Include="Globals.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Regions\Area.cs" />
+    <Compile Include="Regions\ScriptedBattlefieldConfiguration.cs" />
+    <Compile Include="Screens\Cutscene.cs" />
+    <Compile Include="Regions\IMapManager.cs" />
+    <Compile Include="Regions\IRegionFactory.cs" />
+    <Compile Include="Regions\MapManager.cs" />
+    <Compile Include="Regions\RegionFactory.cs" />
+    <Compile Include="Regions\MapGroupingItem.cs" />
+    <Compile Include="Regions\MapGrouping.cs" />
+    <Compile Include="Regions\MapPath.cs" />
+    <Compile Include="Regions\AreaMap.cs" />
+    <Compile Include="Regions\SubRegion.cs" />
+    <Compile Include="Regions\Region.cs" />
+    <Compile Include="Regions\RegionManager.cs" />
+    <Compile Include="Screens\ColorString.cs" />
+    <Compile Include="Screens\EventHandlerPrinter.cs" />
+    <Compile Include="Screens\Menus\ConfirmationMenu.cs" />
+    <Compile Include="Screens\Menus\FighterSelectionMenu.cs" />
+    <Compile Include="Screens\Menus\IMenuFactory.cs" />
+    <Compile Include="Screens\Menus\MenuActions\TypedMenuAction.cs" />
+    <Compile Include="Screens\Menus\MenuSelections\TypedMenuSelection.cs" />
+    <Compile Include="Screens\Menus\MenuSelections\NumberInputMenuSelection.cs" />
+    <Compile Include="Screens\Menus\KeysOffOwnerNumberInputMenu.cs" />
+    <Compile Include="Screens\Menus\NumberInputMenu.cs" />
+    <Compile Include="Screens\Menus\MenuSelections\SelectEnemyFighterMenuSelection.cs" />
+    <Compile Include="Screens\Menus\SelectEnemyTeamMenuManager.cs" />
+    <Compile Include="Screens\Menus\SelectEnemyFighterMenu.cs" />
+    <Compile Include="Screens\Menus\MenuManager.cs" />
+    <Compile Include="Screens\Menus\AttackTypeSelectionMenu.cs" />
+    <Compile Include="Screens\Menus\HumanControlledEnemyMenu.cs" />
+    <Compile Include="Screens\Menus\NameInputMenu.cs" />
+    <Compile Include="Screens\Menus\SpecialMoveSelectionMenu.cs" />
+    <Compile Include="Screens\Menus\SpellSelectionMenu.cs" />
+    <Compile Include="Screens\ConsoleInput.cs" />
+    <Compile Include="Screens\ConsoleOutput.cs" />
+    <Compile Include="Screens\IOutput.cs" />
+    <Compile Include="Screens\IInput.cs" />
+    <Compile Include="Screens\Menus\BattleMenu.cs" />
+    <Compile Include="Screens\Menus\TargetMenu.cs" />
+    <Compile Include="Screens\Menus\MenuSelections\MenuSelection.cs" />
+    <Compile Include="Screens\Menus\MenuActions\MenuAction.cs" />
+    <Compile Include="Screens\Menus\Menu.cs" />
+    <Compile Include="Screens\Menus\IMenu.cs" />
+    <Compile Include="Screens\Menus\MenuFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Decisions.txt" />
+    <Content Include="RegionNotes.txt" />
+    <Content Include="Notes.txt" />
+    <Content Include="TODO.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,27 @@
+﻿Personality quiz:
+
+1. Who is more enigmatic? (gives Enigmatic flag to one)
+2. Who always wins at cards? (raises luck)
+3. Who is more likely to seek treasure? (gives Adventurous flag to chosen character)
+4. Who sometimes watches the stars at night? (gives Dreamer flag to chosen character, probably closer ties to Lunar magic)
+5. Who is better at solving maze puzzles- you know, getting through a maze on a piece of paper? (intelligence boost & maze solver flag)
+6. Who would succumb to the dark powers of an ageless gem containing the soul of an evil wizard- I swear I'm just asking to get a feel for the characters? (darkness to chosen fighter, light to the other)
+    options include "neither!" and "both, obviously"- which doubles down on the elements
+7. Who believes in ghosts? (member not chosen gets machine boost, possibly winner gets magic boost?)
+8. Who eats the last donut without asking? (selfish flag)
+
+After the Barbarian has fled:
+
+the player with the maze solver flag will suggest they come up with a strategy, options will be:
+
+1. Weaken him (with poison, perhaps) - trickster god : Crypt subregion
+2. Intimidate him with strength - strength god : Hero's Tavern subregion
+3. draw him out of his element - intelect god : Ancient Library subregion
+(secret option) "give him a hug" or just "hug"- healing/pacifist route : Oasis subregion
+
+THe other player will say they were thinking about what they themselves could do, options will be:
+
+1. Train, then hit him really hard - strength god : Cliffs of a thousand pushups subregion
+2. Come up with techniques to counter his - intelect god :  Temple of Darkness subregion
+3. rally those wronged by his selfishness - trickster god : Village Center subregion
+(secret option) "unlock secret transformation" or just "transform" - gain a bestial transformation : beast temple sub reigon

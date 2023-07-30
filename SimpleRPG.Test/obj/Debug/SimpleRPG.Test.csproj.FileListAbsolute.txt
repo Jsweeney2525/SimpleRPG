@@ -1,0 +1,44 @@
+C:\Users\jswee3\Documents\Visual Studio 2015\Projects\SimpleRPG\SimpleRPG.Test\obj\Debug\SimpleRPG.Test.csprojResolveAssemblyReference.cache
+C:\Users\jswee3\Documents\Visual Studio 2015\Projects\SimpleRPG\SimpleRPG.Test\bin\Debug\SimpleRPG.Test.exe.config
+C:\Users\jswee3\Documents\Visual Studio 2015\Projects\SimpleRPG\SimpleRPG.Test\bin\Debug\SimpleRPG.Test.exe
+C:\Users\jswee3\Documents\Visual Studio 2015\Projects\SimpleRPG\SimpleRPG.Test\bin\Debug\SimpleRPG.Test.pdb
+C:\Users\jswee3\Documents\Visual Studio 2015\Projects\SimpleRPG\SimpleRPG.Test\bin\Debug\nunit.framework.dll
+C:\Users\jswee3\Documents\Visual Studio 2015\Projects\SimpleRPG\SimpleRPG.Test\bin\Debug\SimpleRPG.exe
+C:\Users\jswee3\Documents\Visual Studio 2015\Projects\SimpleRPG\SimpleRPG.Test\bin\Debug\SimpleRPG.pdb
+C:\Users\jswee3\Documents\Visual Studio 2015\Projects\SimpleRPG\SimpleRPG.Test\bin\Debug\nunit.framework.xml
+C:\Users\jswee3\Documents\Visual Studio 2015\Projects\SimpleRPG\SimpleRPG.Test\obj\Debug\SimpleRPG.Test.exe
+C:\Users\jswee3\Documents\Visual Studio 2015\Projects\SimpleRPG\SimpleRPG.Test\obj\Debug\SimpleRPG.Test.pdb
+C:\Users\joels\Documents\simplerpg\SimpleRPG.Test\bin\Debug\SimpleRPG.Test.exe.config
+C:\Users\joels\Documents\simplerpg\SimpleRPG.Test\bin\Debug\SimpleRPG.Test.exe
+C:\Users\joels\Documents\simplerpg\SimpleRPG.Test\bin\Debug\SimpleRPG.Test.pdb
+C:\Users\joels\Documents\simplerpg\SimpleRPG.Test\bin\Debug\nunit.framework.dll
+C:\Users\joels\Documents\simplerpg\SimpleRPG.Test\bin\Debug\SimpleRPG.exe
+C:\Users\joels\Documents\simplerpg\SimpleRPG.Test\bin\Debug\SimpleRPG.pdb
+C:\Users\joels\Documents\simplerpg\SimpleRPG.Test\bin\Debug\nunit.framework.xml
+C:\Users\joels\Documents\simplerpg\SimpleRPG.Test\obj\Debug\SimpleRPG.Test.csprojResolveAssemblyReference.cache
+C:\Users\joels\Documents\simplerpg\SimpleRPG.Test\obj\Debug\SimpleRPG.Test.exe
+C:\Users\joels\Documents\simplerpg\SimpleRPG.Test\obj\Debug\SimpleRPG.Test.pdb
+C:\Users\joels\Documents\Visual Studio 2015\Projects\SimpleRPG.Test\obj\Debug\SimpleRPG.Test.csprojResolveAssemblyReference.cache
+C:\Users\joels\Documents\Visual Studio 2015\Projects\SimpleRPG.Test\bin\Debug\SimpleRPG.Test.exe.config
+C:\Users\joels\Documents\Visual Studio 2015\Projects\SimpleRPG.Test\bin\Debug\SimpleRPG.Test.exe
+C:\Users\joels\Documents\Visual Studio 2015\Projects\SimpleRPG.Test\bin\Debug\SimpleRPG.Test.pdb
+C:\Users\joels\Documents\Visual Studio 2015\Projects\SimpleRPG.Test\bin\Debug\nunit.framework.dll
+C:\Users\joels\Documents\Visual Studio 2015\Projects\SimpleRPG.Test\bin\Debug\SimpleRPG.exe
+C:\Users\joels\Documents\Visual Studio 2015\Projects\SimpleRPG.Test\bin\Debug\SimpleRPG.pdb
+C:\Users\joels\Documents\Visual Studio 2015\Projects\SimpleRPG.Test\bin\Debug\nunit.framework.xml
+C:\Users\joels\Documents\Visual Studio 2015\Projects\SimpleRPG.Test\obj\Debug\SimpleRPG.Test.exe
+C:\Users\joels\Documents\Visual Studio 2015\Projects\SimpleRPG.Test\obj\Debug\SimpleRPG.Test.pdb
+C:\Users\Jswee\source\repos\SimpleRPG\SimpleRPG.Test\bin\Debug\SimpleRPG.Test.exe.config
+C:\Users\Jswee\source\repos\SimpleRPG\SimpleRPG.Test\bin\Debug\SimpleRPG.Test.exe
+C:\Users\Jswee\source\repos\SimpleRPG\SimpleRPG.Test\bin\Debug\SimpleRPG.Test.pdb
+C:\Users\Jswee\source\repos\SimpleRPG\SimpleRPG.Test\bin\Debug\nunit.framework.dll
+C:\Users\Jswee\source\repos\SimpleRPG\SimpleRPG.Test\bin\Debug\SimpleRPG.exe
+C:\Users\Jswee\source\repos\SimpleRPG\SimpleRPG.Test\bin\Debug\SimpleRPG.pdb
+C:\Users\Jswee\source\repos\SimpleRPG\SimpleRPG.Test\bin\Debug\SimpleRPG.exe.config
+C:\Users\Jswee\source\repos\SimpleRPG\SimpleRPG.Test\bin\Debug\nunit.framework.pdb
+C:\Users\Jswee\source\repos\SimpleRPG\SimpleRPG.Test\bin\Debug\nunit.framework.xml
+C:\Users\Jswee\source\repos\SimpleRPG\SimpleRPG.Test\obj\Debug\SimpleRPG.Test.csproj.AssemblyReference.cache
+C:\Users\Jswee\source\repos\SimpleRPG\SimpleRPG.Test\obj\Debug\SimpleRPG.Test.csproj.CoreCompileInputs.cache
+C:\Users\Jswee\source\repos\SimpleRPG\SimpleRPG.Test\obj\Debug\SimpleRPG.Test.csproj.CopyComplete
+C:\Users\Jswee\source\repos\SimpleRPG\SimpleRPG.Test\obj\Debug\SimpleRPG.Test.exe
+C:\Users\Jswee\source\repos\SimpleRPG\SimpleRPG.Test\obj\Debug\SimpleRPG.Test.pdb

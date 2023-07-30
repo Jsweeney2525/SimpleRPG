@@ -1,0 +1,79 @@
+﻿BattleManager class - initialized with 2 teams.
+
+BattleManager, during initialization, will tell any HumanControlled Team to start building their menu manager
+
+
+
+1. create delegate
+public delegate returnType delegateName(args) <-- typically called ____Handler
+
+2. Create method that matches delegate signature
+public returnType Foo(args)
+public returnType Bar(args)
+
+3. Assign at creation:
+delegateName baz = new delegateName(Foo);
+baz += Bar
+
+4. Invoke the same way you would a method:
+baz(args);
+
+
+EVENTS
+1. define event
+public event delegateName eventName <-- if the delegate is ____Handler, the event is usually _____
+
+2. Typically we create a method called OnEventName, to which we pass the values to be sent down the pipe.
+if(eventName != null)
+{
+    eventName(args);
+}
+
+EVENT ARGS
+-wrap all the data you're going to send down the pipeline in one object
+
+public class EventNameEventArgs : EventArgs
+{
+    eventData { get; set; }
+}
+
+if we define custom event args, delegate should be:
+
+returnType delegateName(object sender, CustomEventArgs e);
+
+can now change the declaration of our event slightly:
+
+public event EventHandler<CustomArgs> eventName <-- no longer need to define the delegate explicitly
+
+
+
+
+
+
+
+
+##########################Scratch pad##############################################
+
+DecisionManager needs to be able to unset the selected subRegion, and this method would be called when the Region was beaten.
+At the same time, the MapGroupingItems should be unlocked for that same subRegion
+
+So you have a list of cutscene components,
+most of them are going to be printing.
+Cutscene components are a list of items inside the Cutscene
+The cutscene belongs to the SubRegion
+SubRegion.ExecuteCutscene is called by RegionManager
+Cutscene is created in RegionFactory
+
+########################################################################################
+Shades:
+
+new enemy type. They appear in groups, and always appear with a "bell"
+- ringing the bell should banish shades
+- different types of bells, different responses, maybe?
+    - (copper?) One should require a "blood" sacrifice. That is, lowers users HP to activate its effect
+    - (steel?) One could simply weaken the shades, lowering their defense or some such
+    - (silver) Another kind would require a prayer and would
+
+-When one shade is killed by conventional means, it is absorbed by one of the others
+-(future idea) A player with strong Mercy alignment would be able to use some spell to defeat them, maybe "purify" them
+-(future idea) A player with strong Malevolent alignment would be able to use some spell to interact with them (& grow stronger)

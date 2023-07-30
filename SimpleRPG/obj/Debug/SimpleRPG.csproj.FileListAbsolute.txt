@@ -1,0 +1,7 @@
+C:\Users\Jswee\source\repos\SimpleRPG\SimpleRPG\bin\Debug\SimpleRPG.exe.config
+C:\Users\Jswee\source\repos\SimpleRPG\SimpleRPG\bin\Debug\SimpleRPG.exe
+C:\Users\Jswee\source\repos\SimpleRPG\SimpleRPG\bin\Debug\SimpleRPG.pdb
+C:\Users\Jswee\source\repos\SimpleRPG\SimpleRPG\obj\Debug\SimpleRPG.csproj.AssemblyReference.cache
+C:\Users\Jswee\source\repos\SimpleRPG\SimpleRPG\obj\Debug\SimpleRPG.csproj.CoreCompileInputs.cache
+C:\Users\Jswee\source\repos\SimpleRPG\SimpleRPG\obj\Debug\SimpleRPG.exe
+C:\Users\Jswee\source\repos\SimpleRPG\SimpleRPG\obj\Debug\SimpleRPG.pdb

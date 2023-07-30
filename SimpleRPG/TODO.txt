@@ -1,0 +1,47 @@
+﻿Next up:
+1. Implement Shades and bells
+    No means of ensuring bells can only target Shades
+    No means of having Bells not have to target specific shades (for the miniboss- probably requires a class that inherits from bell)
+    Bell moves currently do not give god bonuses
+      >God bonuses should be higher for suceeding against enemies with higher shade levels
+      >God bonuses should be higher when aligned with the bell (e.g. silver - Mercy, copper - Malevolence)
+    
+    
+    --Bell moves are currently not executed (sealing is)--
+    --A shade being "sealed" or "purified" does not stop its absorbtion--
+    --Shades still do not gain a bonus when they absorb a fallen shade--
+    --Bells are not mentioned in the battle introduction, nor on the status screen--
+    --No means of generating Bells programatically by the Region or Team Managers (or other)--
+        
+    
+    > EnemyFighter.GetExecutableMoves() not tested on its own
+    >RestrictedFighterTypesSpecialTargettingRule not tested on its own (derived classes, for example), same for SpecialTargettingRuleCollection
+    >Move all the clusted classes out of BattleMove.cs
+    >Move all the cluttered classes out of BattlefieldFactory.cs
+    >No tests to ensure an error thrown if a ConditionalPowerAttackBattleMove is used by somethign that doesn't implement IConditionalPowerExecutor
+    >make the Bell success and failure messages raise events, subscribe to those events, and have the BattleManagerScreenOutputs file handle those
+    >dominating a shade should raise a different type of event than sealing
+    >Have healing and stat raising fire events, wire Printing into those
+    >the blood option should bring the shade to the player's team
+    >the mercy healing should heal more based on the shadeLevel
+    > when a shade's name changes (it absorbs another shade), a rename of the shades may be necessary. This may also mean rethinking the grouping logic, perhaps having each EnemyFighter implement some kind of overridable "group by" method
+    > Shades should not try to absorbs stronger shades. Also the absorb method is not more or less likely based off Shade Level
+
+    first battle: 3 shades, all level 1
+    second battle: 3 shades, one is level 3
+    third battle: 3 shades all level 1, but add another fighter
+    Boss: 4 super shades
+2. current bugs:
+    typos in cutscenes/help menus
+    first boss battle doesn't end if eggs still on field
+    Barbarian too dumb to realize when shield busted
+    No text displayed when Barbarian runs
+    Disabled menu actions can still be selected
+    ExecutionText is shared between most move types, but each type implements a different "print execution text" method. Consolidate!
+    
+3. The current implementation of cutscenes mixed with DecisionManager gives me ulcers. Is there a better way?
+4. HumanControlledEnemies should be a component of the enemy type, not a wrapper- this will allow code to target Shade's specifically without having to check the HumanControlledenemy's inner fihgter
+
+"Special Move Failed" event for trying to fortify a shield on a target that has no shield
+Set targetting menu to be able to determine if it can target something with a shield Fortifier (checking the healing vs. fortifying aspect)
+Have ExecuteAttack and ExecuteSpell method be more like a pipeline, each passing some kind of "attackInfo" struct around. It would hold binary or simplistic values for, example, whether an attack was evaded and who is attacking

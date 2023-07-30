@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnit.3.10.1\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.10.1\build\NUnit.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C068C12B-77FF-40AA-9E3C-995EFC840E2A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SimpleRPG.Test</RootNamespace>
+    <AssemblyName>SimpleRPG.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=3.10.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.10.1\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BattleTests\BattlefieldFactoryTests.cs" />
+    <Compile Include="BattleTests\BattleManagerEventHandlerTests.cs" />
+    <Compile Include="BattleTests\BattleMoveTests\BattleMoveEffectTests\CannotBeEvadedBattleMoveEffectTests.cs" />
+    <Compile Include="BattleTests\BattleMoveTests\BattleMoveEffectTests\AttackBoostEffectTests.cs" />
+    <Compile Include="BattleTests\BattleMoveTests\BattleMoveEffectTests\RestorationBattleMoveEffectTests.cs" />
+    <Compile Include="BattleTests\BattleMoveTests\BattleMoveEffectTests\NeverMissEffectTests.cs" />
+    <Compile Include="BattleTests\BattleMoveTests\BattleMoveQueueTests.cs" />
+    <Compile Include="BattleTests\BattleMoveTests\ConditionalBattleMoveTests\NotEvadedBattleConditionTests.cs" />
+    <Compile Include="BattleTests\BattleMoveTests\ShieldFortifyingMoveTests.cs" />
+    <Compile Include="BattleTests\BattleMoveTests\ShieldBusterMoveTests.cs" />
+    <Compile Include="BattleTests\BattleMoveTests\AttackBattleMoveTests.cs" />
+    <Compile Include="BattleTests\BattleMoveTests\StatusMoveTests.cs" />
+    <Compile Include="BattleTests\BattleShieldTests.cs" />
+    <Compile Include="BattleTests\BattleMoveTests\DanceMoveTests.cs" />
+    <Compile Include="BattleTests\FighterTests\EnemyTests\HumanControlledEnemyFighterTests.cs" />
+    <Compile Include="BattleTests\FighterTests\EnemyTests\BarbarianTests.cs" />
+    <Compile Include="BattleTests\FighterTests\EnemyTests\ShieldGuyTests.cs" />
+    <Compile Include="BattleTests\FighterTests\EnemyTests\WarriorTests.cs" />
+    <Compile Include="BattleTests\FighterTests\EnemyTests\EggTests.cs" />
+    <Compile Include="BattleTests\FighterTests\EnemyTests\ShadeTests.cs" />
+    <Compile Include="BattleTests\FighterTests\GroupingFactoryTests.cs" />
+    <Compile Include="BattleTests\FighterTests\TeamEventTests.cs" />
+    <Compile Include="BattleTests\FighterTests\TestFighterTests.cs" />
+    <Compile Include="BattleTests\FighterTests\EnemyTests\ZombieTests.cs" />
+    <Compile Include="BattleTests\FighterTests\EnemyTests\KikiAndRikiTests.cs" />
+    <Compile Include="BattleTests\MagicTests\MagicSetTests.cs" />
+    <Compile Include="BattleTests\MagicTests\CastSpellTests.cs" />
+    <Compile Include="BattleTests\BattleMoveTests\ShieldMoveTests.cs" />
+    <Compile Include="BattleTests\StatusTests\BlindStatusTests.cs" />
+    <Compile Include="BattleTests\StatusTests\CounterAttackStatusTests.cs" />
+    <Compile Include="BattleTests\StatusTests\AutoEvadeStatusTests.cs" />
+    <Compile Include="BattleTests\StatusTests\StatusTests.cs" />
+    <Compile Include="BattleTests\TerrainInteractableTests\BattleManagerTerrainInteractableTests.cs" />
+    <Compile Include="BattleTests\TerrainInteractableTests\BellTests.cs" />
+    <Compile Include="Exceptions\NeedsRefactoringException.cs" />
+    <Compile Include="HelperTests\GodRelationshipManagerTests.cs" />
+    <Compile Include="HelperTests\DecisionManagerTests.cs" />
+    <Compile Include="MockClassesTests\TestFieldEffectCombinerTests.cs" />
+    <Compile Include="MockClasses\BattleMoves\TestMultiTurnMove.cs" />
+    <Compile Include="MockClasses\BattleMoves\TestDoNothingMove.cs" />
+    <Compile Include="BattleTests\FighterTests\EnemyTests\GoblinTests.cs" />
+    <Compile Include="BattleTests\FighterTests\EnemyTests\FairyTests.cs" />
+    <Compile Include="BattleTests\FighterTests\EnemyTests\MegaChickenTests.cs" />
+    <Compile Include="BattleTests\FighterTests\HumanFighterEventTests.cs" />
+    <Compile Include="BattleTests\FighterTests\LevelUpManagerTests.cs" />
+    <Compile Include="BattleTests\FighterTests\TeamFactoryTests.cs" />
+    <Compile Include="BattleTests\FighterTests\TeamTests.cs" />
+    <Compile Include="BattleTests\FighterTests\HumanFighterTests.cs" />
+    <Compile Include="BattleTests\FighterTests\EnemyTests\EnemyFighterTests.cs" />
+    <Compile Include="BattleTests\FighterTests\FighterEventTests.cs" />
+    <Compile Include="BattleTests\FighterTests\BasicFighterTests.cs" />
+    <Compile Include="BattleTests\BattleManagerTests.cs" />
+    <Compile Include="BattleTests\BattleMoveTests\FieldEffectTests.cs" />
+    <Compile Include="BattleTests\MagicTests\MagicRelationshipTests.cs" />
+    <Compile Include="BattleTests\MagicTests\SpellFactoryTests.cs" />
+    <Compile Include="HelperTests\ChanceServiceTest.cs" />
+    <Compile Include="MockClasses\BattleMoves\TestDanceMove.cs" />
+    <Compile Include="MockClasses\BattleMoves\TestFieldEffectMove.cs" />
+    <Compile Include="MockClasses\Factories\MockDecisionManager.cs" />
+    <Compile Include="MockClasses\Factories\MockMapManager.cs" />
+    <Compile Include="MockClasses\Factories\MockMenuFactory.cs" />
+    <Compile Include="MockClasses\Factories\MockRegionFactory.cs" />
+    <Compile Include="MockClasses\MockMenu.cs" />
+    <Compile Include="MockClasses\SilentBattleConfiguration.cs" />
+    <Compile Include="MockClasses\TestFieldEffectCombiner.cs" />
+    <Compile Include="MockClasses\ITestFighter.cs" />
+    <Compile Include="MockClasses\TestHelperExtensionMethods.cs" />
+    <Compile Include="MockClasses\TestMenuManager.cs" />
+    <Compile Include="MockClasses\TestBattleManager.cs" />
+    <Compile Include="MockClasses\Events\TurnEndedEvents.cs" />
+    <Compile Include="MockClasses\Factories\TestMoveFactory.cs" />
+    <Compile Include="MockClasses\Factories\TestTeamFactory.cs" />
+    <Compile Include="MockClasses\TestTeam.cs" />
+    <Compile Include="MockClasses\TestHumanFighter.cs" />
+    <Compile Include="MockClasses\Factories\TestFighterFactory.cs" />
+    <Compile Include="MockClasses\Enemies\TestEnemyFighter.cs" />
+    <Compile Include="MockClasses\Events\EventLogger.cs" />
+    <Compile Include="MockClasses\MockChanceService.cs" />
+    <Compile Include="MockClasses\MockOutput.cs" />
+    <Compile Include="MockClasses\MockInput.cs" />
+    <Compile Include="MockClasses\TestTerrainInteractable.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegionTests\AreaMapTests.cs" />
+    <Compile Include="RegionTests\RegionManagerTests.cs" />
+    <Compile Include="RegionTests\MapManagerTests.cs" />
+    <Compile Include="ScreenTests\BattleMenuTests.cs" />
+    <Compile Include="ScreenTests\CutsceneTests.cs" />
+    <Compile Include="ScreenTests\EventHandlerPrinterTests.cs" />
+    <Compile Include="ScreenTests\MenuActionTests.cs" />
+    <Compile Include="ScreenTests\NameInputMenuTests.cs" />
+    <Compile Include="ScreenTests\KeysOffOwnerNumberInputMenuTests.cs" />
+    <Compile Include="ScreenTests\NumberInputMenuTests.cs" />
+    <Compile Include="ScreenTests\ColorStringOutputTests.cs" />
+    <Compile Include="ScreenTests\SelectEnemyFighterMenuTests.cs" />
+    <Compile Include="ScreenTests\SpecialMoveSelectionMenuTests.cs" />
+    <Compile Include="ScreenTests\SpellSelectionMenuTests.cs" />
+    <Compile Include="ScreenTests\MenuManagerTests.cs" />
+    <Compile Include="ScreenTests\SelectEnemyTeamMenuManagerTests.cs" />
+    <Compile Include="ScreenTests\TargetMenuTests.cs" />
+    <Compile Include="ScreenTests\ChooseAttackTypeMenuTests.cs" />
+    <Compile Include="ScreenTests\BasicMenuTests.cs" />
+    <Compile Include="ScreenTests\ScreenTestBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleRPG\SimpleRPG.csproj">
+      <Project>{2ee2383a-7fcf-423b-bd8e-0b33e29898bf}</Project>
+      <Name>SimpleRPG</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NUnit.3.10.1\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.3.10.1\build\NUnit.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
